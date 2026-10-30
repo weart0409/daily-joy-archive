@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f4ec" />
+    <meta name="description" content="오늘의 작은 행복을 기록하고, 내일의 장면을 모아보세요." />
+    <title>오늘의 행복 수집소</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Gowun+Dodum&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./config.js"></script>
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <header class="topbar" id="top">
+      <a class="brand" href="#top" aria-label="오늘의 행복 수집소 홈">
+        <span class="brand-mark" aria-hidden="true">h</span>
+        <span class="brand-copy"><strong>오늘의 행복</strong><small>DAILY JOY ARCHIVE</small></span>
+      </a>
+      <nav class="topnav" aria-label="주요 메뉴">
+        <a href="#challenge">행복 기록</a>
+        <a href="#keepsake">기록 노트</a>
+      </nav>
+      <a class="top-link" href="#challenge"><span>기록 시작</span><span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="opening shell" aria-labelledby="page-title">
+        <div class="opening-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> OCTOBER JOY PROJECT <span class="eyebrow-divider">/</span> 01—31</p>
+          <h1 id="page-title">행복은 거창한 일이 아니라,<br /><em>오늘의 한 장면.</em></h1>
+          <p class="opening-description">마음에 남은 순간을 하나씩 모아보세요.<br />평범한 하루가 나만의 작은 아카이브가 됩니다.</p>
+          <a class="text-link" href="#challenge">오늘의 장면 남기기 <span aria-hidden="true">↓</span></a>
+          <div class="opening-note"><span class="note-rule"></span><span>01분이면 충분한 오늘의 기록</span></div>
+        </div>
+        <figure class="opening-visual">
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=85" alt="따뜻한 햇살 아래 놓인 다채로운 꽃들" />
+          <span class="visual-index">MOMENT No. 018</span>
+          <figcaption><span>오늘의 수집 문장</span><strong>“아무 이유 없이<br />기분이 좋아진 오후.”</strong></figcaption>
+          <span class="visual-sun" aria-hidden="true">+</span>
+        </figure>
+      </section>
+
+      <div class="ticker" aria-label="캠페인 안내">
+        <div class="ticker-track"><span>작은 기쁨도 충분한 행복</span><i aria-hidden="true">✳</i><span>기록하면 오래 남아요</span><i aria-hidden="true">✳</i><span>오늘의 행복을 수집하는 중</span><i aria-hidden="true">✳</i><span>작은 기쁨도 충분한 행복</span><i aria-hidden="true">✳</i><span>기록하면 오래 남아요</span><i aria-hidden="true">✳</i></div>
+      </div>
+
+      <section class="challenge shell" id="challenge" aria-labelledby="challenge-title">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="eyebrow-dot coral"></span> YOUR DAILY COLLECTION <span class="eyebrow-divider">/</span> 01</p>
+          <h2 id="challenge-title">오늘은 어떤 순간을<br /><em>모아볼까요?</em></h2>
+          <p>마음을 움직인 장면을 고르고 짧게 남겨주세요.</p>
+        </div>
+
+        <div class="experience-layout">
+          <div class="experience-main">
+            <div class="stepper" aria-label="기록 단계">
+              <div class="stepper-item is-current" data-step-indicator="activity" aria-current="step"><span>01</span><span>순간 고르기</span></div>
+              <span class="stepper-line" aria-hidden="true"></span>
+              <div class="stepper-item" data-step-indicator="reflection"><span>02</span><span>한 줄 기록</span></div>
+              <span class="stepper-line" aria-hidden="true"></span>
+              <div class="stepper-item" data-step-indicator="complete"><span>03</span><span>수집 완료</span></div>
+            </div>
+
+            <form id="joy-form" novalidate>
+              <fieldset class="step-panel" data-step-panel="activity">
+                <legend>오늘의 행복은 어디에서 왔나요?</legend>
+                <p class="field-hint">가장 가까운 순간 하나를 선택해보세요.</p>
+                <div class="activity-options">
+                  <button class="activity-option" type="button" data-activity="taste" data-track-button="activity_taste" aria-pressed="false">
+                    <span class="option-number">A</span><span class="option-copy"><strong>맛있는 한 입</strong><small>좋아하는 것을 천천히 먹었어요</small></span><span class="option-mark" aria-hidden="true">+</span>
+                  </button>
+                  <button class="activity-option" type="button" data-activity="outside" data-track-button="activity_outside" aria-pressed="false">
+                    <span class="option-number">B</span><span class="option-copy"><strong>바깥의 공기</strong><small>산책하며 계절을 느꼈어요</small></span><span class="option-mark" aria-hidden="true">+</span>
+                  </button>
+                  <button class="activity-option" type="button" data-activity="people" data-track-button="activity_people" aria-pressed="false">
+                    <span class="option-number">C</span><span class="option-copy"><strong>다정한 연결</strong><small>누군가와 마음을 나눴어요</small></span><span class="option-mark" aria-hidden="true">+</span>
+                  </button>
+                  <button class="activity-option" type="button" data-activity="myself" data-track-button="activity_myself" aria-pressed="false">
+                    <span class="option-number">D</span><span class="option-copy"><strong>나만의 여유</strong><small>온전히 나를 위한 시간을 보냈어요</small></span><span class="option-mark" aria-hidden="true">+</span>
+                  </button>
+                </div>
+                <p class="form-message" id="activity-error" aria-live="polite"></p>
+                <button class="button button-dark" id="next-step" type="button" data-track-button="continue_to_reflection" disabled>다음으로 <span aria-hidden="true">→</span></button>
+              </fieldset>
+
+              <fieldset class="step-panel" data-step-panel="reflection" hidden>
+                <legend>그 순간을 한 줄로 남겨볼까요?</legend>
+                <p class="field-hint">마음에 남은 장면을 짧게 적어주세요. 기록은 이 화면에서만 보여요.</p>
+                <label class="sr-only" for="joy-note">오늘의 행복 기록</label>
+                <textarea id="joy-note" maxlength="100" placeholder="예: 퇴근길에 좋아하는 노래를 들었다." required></textarea>
+                <div class="field-meta"><span class="form-message" id="note-error" aria-live="polite"></span><span id="character-count">0 / 100</span></div>
+                <div class="form-actions">
+                  <button class="button button-quiet" id="back-step" type="button" data-track-button="back_to_activity"><span aria-hidden="true">←</span> 이전</button>
+                  <button class="button button-dark" type="submit" data-track-button="save_joy_record">행복 저장하기 <span aria-hidden="true">→</span></button>
+                </div>
+              </fieldset>
+            </form>
+
+            <section class="success-panel" id="success-panel" hidden aria-live="polite">
+              <span class="success-kicker">COLLECTION COMPLETE <span aria-hidden="true">✳</span></span>
+              <h3>오늘의 행복을<br /><em>잘 모아두었어요.</em></h3>
+              <p id="saved-note"></p>
+              <button class="text-link" id="record-another" type="button" data-track-button="record_another">다른 순간도 기록하기 <span aria-hidden="true">↗</span></button>
+            </section>
+          </div>
+
+          <aside class="side-note" aria-label="행복 기록 안내">
+            <div class="side-note-top"><span>COLLECTING JOY</span><span class="live-dot" aria-hidden="true"></span></div>
+            <div class="side-art" aria-hidden="true"><span class="side-art-ring"></span><span class="side-art-center">오늘</span><span class="side-art-spark spark-one">✳</span><span class="side-art-spark spark-two">✳</span></div>
+            <p class="side-note-title">기억은 작아도<br />마음은 오래 환해져요.</p>
+            <p class="side-note-body">이벤트 참여는 익명으로 집계됩니다. 작성한 한 줄은 통계 서버로 전송하지 않아요.</p>
+            <div class="side-note-footer"><span>30 DAYS</span><span>ONE MOMENT A DAY</span></div>
+          </aside>
+        </div>
+        <p class="analytics-status" id="analytics-status" role="status">통계 연결 상태를 확인하는 중입니다.</p>
+      </section>
+
+      <section class="keepsake" id="keepsake" aria-labelledby="keepsake-title">
+        <div class="keepsake-image" role="img" aria-label="빛이 드는 책상 위 기록 노트"></div>
+        <div class="keepsake-copy">
+          <p class="eyebrow"><span class="eyebrow-dot yellow"></span> KEEP THE MOMENT</p>
+          <h2 id="keepsake-title">내일의 나에게<br /><em>행복을 건네는 노트.</em></h2>
+          <p>하루 한 장, 마음에 남은 순간을 오래 간직할 수 있도록 만든 기록 노트예요.</p>
+          <div class="product-line"><span>DAILY JOY NOTE · 30 DAYS</span><strong>₩12,000</strong></div>
+          <button class="button button-coral" id="purchase-button" type="button" data-track-button="joy_note_purchase">기록 노트 살펴보기 <span aria-hidden="true">↗</span></button>
+          <p class="purchase-caption">결제 링크가 연결되면 구매 시작과 완료 전환을 구분해 측정합니다.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell"><a class="footer-brand" href="#top">오늘의 행복 수집소</a><span>작은 순간을 모아, 나만의 하루로.</span><span class="footer-year">DAILY JOY ARCHIVE · 2026</span></footer>
+
+    <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+      <button class="dialog-close" type="button" aria-label="닫기" data-track-button="close_checkout_dialog">×</button>
+      <p class="eyebrow"><span class="eyebrow-dot coral"></span> DAILY JOY NOTE</p>
+      <h2 id="checkout-title">구매 링크를<br /><em>연결해주세요.</em></h2>
+      <p>결제 서비스의 체크아웃 주소를 <code>site/config.js</code>에 입력하면 구매 시작 이벤트를 기록하고 해당 페이지로 이동합니다. 실제 구매 완료는 결제 웹훅으로 기록해야 정확해요.</p>
+      <button class="button button-dark" type="button" data-dialog-close>확인 <span aria-hidden="true">→</span></button>
+    </dialog>
+  </body>
+</html>
